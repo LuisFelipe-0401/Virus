@@ -1,0 +1,184 @@
+* {background-color: rgb(255, 255, 255);}
+
+* { margin: 0; padding: 0; }
+
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: rgb(255, 255, 255);
+    bottom: 500px;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    position: absolute;
+    z-index: 10;
+    border-bottom:2px solid rgb(163, 210, 216);
+}
+
+.slider li:nth-child(1) label {
+    left: 500px;
+}
+
+.slider li:nth-child(2) label {
+    left: 600px;
+}
+
+.slider li:nth-child(3) label {
+    left: 700px;
+}
+.slider li:nth-child(4) label {
+    left: 900px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+#img1 {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 250px;
+    left: 350px;
+}
+#img2 {
+    position: absolute;
+    height: 25%;
+    width: 15%;
+    top: 250px;
+    left: 750px;
+}
+#img3 {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 450px;
+    left: 350px;
+}
+#img4 {
+    position: absolute;
+    height: 25%;
+    width: 15%;
+    top: 450px;
+    left: 750px;
+}
+#h1:hover {
+    background: -webkit-linear-gradient(-0.2turn, deepskyblue, deeppink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#h2:hover {
+    background: -webkit-linear-gradient(-0.2turn, deepskyblue, deeppink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#h3:hover {
+    background: -webkit-linear-gradient(-0.2turn, deepskyblue, deeppink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#h4:hover {
+    background: -webkit-linear-gradient(-0.2turn, deepskyblue, deeppink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#slide1:hover{
+    width: 70px;
+    background-color: turquoise;
+}
+@slide1:checked{
+    #info{
+        display:true;
+    }
+    
+}
+#slide2{
+    width: 50px;
+    background-color: turquoise;
+}
+#slide3{
+    width: 200px;
+    background-color: turquoise;
+}
+#slide4{
+    width: 100px;
+    background-color: turquoise;
+}
+#info{
+    position: absolute;
+    left: 470px;
+    top: 250px;
+}
+#desc{
+    position: absolute;
+    left: 30px;
+    top: 260px;
+    font-size: 20px;
+}
+#text{
+    position: absolute;
+    left: 10px;
+    top: 300px;
+    font-size: 20px;
+    width: 800px;
+}
+#ofer{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 20px;
+}
+#f{
+    position: absolute;
+    left: 400px;
+    top: 250px;
+    font-size: 20px;
+}
+form {
+    position: absolute;
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    top: 250px;
+    left: 550px;
+}
+#b1{
+    position: absolute;
+    width: 250px;
+    font-size: 20px;
+    top: 350px;
+    left: 450px;
+    height: 100px;
+}
+#b2{
+    position: absolute;
+    width: 250px;
+    font-size: 20px;
+    top: 350px;
+    left: 850px;
+    height: 100px;
+}
+#b3{
+    position: absolute;
+    width: 250px;
+    font-size: 20px;
+    top: 550px;
+    left: 450px;
+    height: 100px;
+}
+#b4{
+    position: absolute;
+    width: 250px;
+    font-size: 20px;
+    top: 550px;
+    left: 850px;
+    height: 100px;
+}

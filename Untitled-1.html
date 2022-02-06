@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Untitled-2.css'>
+    <script>
+        function demoDisplay() {
+            if(document.getElementById("slide1").checked){
+                document.getElementById("info").style.display = "";
+                document.getElementById("fotos").style.display = "none";
+                document.getElementById("avaliações").style.display = "none";
+                document.getElementById("ofertas").style.display = "none";
+            }
+            if(document.getElementById("slide2").checked){
+                document.getElementById("info").style.display = "none";
+                document.getElementById("fotos").style.display = "";
+                document.getElementById("avaliações").style.display = "none";
+                document.getElementById("ofertas").style.display = "none";
+            }
+            if(document.getElementById("slide3").checked){
+                document.getElementById("info").style.display = "none";
+                document.getElementById("fotos").style.display = "none";
+                document.getElementById("avaliações").style.display = "";
+                document.getElementById("ofertas").style.display = "none";
+            }
+            if(document.getElementById("slide4").checked){
+                document.getElementById("info").style.display = "none";
+                document.getElementById("fotos").style.display = "none";
+                document.getElementById("avaliações").style.display = "none";
+                document.getElementById("ofertas").style.display = "";
+            }
+
+            }
+    </script>
+</head>
+<body>
+    <ul class="slider">
+        <li>
+              <input type="radio" id="slide1" name="slide" checked onclick="demoDisplay()">
+              <label for="slide1"><h1 id="h1">Info</h1></label>
+              
+        </li>
+        <li>
+              <input type="radio" id="slide2" name="slide"onclick="demoDisplay()">
+              <label for="slide2"><h1 id="h2">fotos</h1></label>
+      </li>
+        </li>
+        <li>
+              <input type="radio" id="slide3" name="slide"onclick="demoDisplay()">
+              <label for="slide3"><h1 id="h3">Avaliações</h1></label>
+        </li>
+        <li>
+            <input type="radio" id="slide4" name="slide" onclick="demoDisplay()">
+            <label for="slide4"><h1 id="h4">Ofertas</h1></label>
+    </ul>
+
+    <div id="info" style="display: none">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12356.206170000587!2d-43.178281909795295!3d-22.96782196522594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5540e4f928d%3A0xef2e5118ccad88ae!2sCopacabana%20Palace%2C%20A%20Belmond%20Hotel%2C%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1644169541010!5m2!1spt-BR!2sbr" width="550" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+        <h1 id="desc">Descrição</h1>
+        <h1 id="text">O que esperar durante sua estadia
+            Roupas de cama higienizadas em alta temperatura
+            Máscara facial obrigatória para hóspedes nas áreas comuns
+            Máscara facial obrigatória para funcionários nas áreas comuns
+            Sinalização de distanciamento social no chão
+            Antisséptico para as mãos disponível para hóspedes e funcionários
+            Política de afastamento para funcionários com sintomas
+            Áreas de grande circulação higienizadas regularmente
+            Equipe orientada a lavar as mãos com frequência
+            Verificações diárias de sintomas e temperatura da equipe
+            Processo de check-in sem contato
+            Processo de check-out sem contato</h1>
+    </div>
+    <div id="fotos" style="display: none">
+        <img src="img 1.jpeg" id="img1"/>
+        <img src="img 2.jpeg" id="img2"/>
+        <img src="img 3.jpeg" id="img3"/>
+        <img src="img 4.jpeg" id="img4"/>
+    </div>
+    <div id="avaliações" style="display: none;">
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" />
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+            </div>
+            <div>
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Enviar sua mensagem</button>
+            </div>
+        </form>
+    </div>
+    <div id="ofertas" style="display: none">
+        <h1 id="f">Ofertas irresistíveis</h1>
+        <button id="b1">Nosso preço mais baixo</button>
+        <button id="b2">Preço recomendado
+            Cancelamento gratuito
+            Café da manhã grátis</button>
+        <button id="b3">Nosso preço mais baixo com cancelamento gratuito</button>
+        <button id="b4">Nosso preço mais baixo com café da manhã grátis e cancelamento gratuito</button>
+    </div>
+</body>
+</html>
